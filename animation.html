@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .img-container {
+        height: 300px; /* Set the height of the container */
+        overflow: hidden; /* Hide the overflowing of child elements */
+        transition: transform 0.5s ease; /* Add a transition for smooth transformation */
+      }
+
+      .img-container img {
+        transform: scale(1); /* Set the initial scale of the image */
+      }
+
+      .img-container:hover {
+        transform: scale(1.5); /* Set the scale of the container on hover */
+      }
+
+      .img-container:hover img {
+        transform: scale(1.5); /* Set the scale of the image on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-container">
+      <img src="../images/knitting.jpg" alt="" />
+    </div>
+  </body>
+</html>

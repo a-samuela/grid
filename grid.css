@@ -1,0 +1,237 @@
+*{box-sizing: border-box;}
+    
+ body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* overflow-x:hidden; */
+    margin: 20px 0;
+}
+
+/* header */
+header{
+        display: flex;
+        /* align-content: space-between; */
+        margin-left: 2%;
+        align-items: center;
+        height: 50px;
+        background-color: white;
+        /* border: 1px solid black; */
+    }
+h1 {
+        color:rgb(8, 8, 51);
+        font-family:cursive;
+        margin-bottom: 30px;
+        /* border: 1px solid black; */
+    }
+   
+ .top_text{
+        position: relative;
+        right: -5%;
+        /* align-content: space-evenly; */
+        height: 40px;
+        align-content: center;
+        width: 80%;
+        /* border: 1px solid black; */
+    }
+    input[type="Search"]{
+        width: 50%;
+        height: 35px;
+        border: 0.3px solid rgba(223, 217, 217, 0.699);;
+        border-radius: 10px;
+        background-color: rgba(223, 217, 217, 0.247);
+    }
+     input[type="Search"]:focus{
+            border: none;
+         }
+    .top_text>span#one{
+        margin: 0% 9%;
+        font-size: 1.2em;
+        font-weight: 700;
+        padding: 0% 2%;
+        border: 0.3px solid rgb(173, 173, 173);
+    }
+     header a{
+        color: rgb(8, 8, 51);
+        font-weight: 700;
+    }
+    button{
+        background-color: rgb(8, 8, 51);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        margin-left: 30px;
+    }
+    /* end of header */
+
+    /* main */
+main{
+    display: flex;
+    /* border: 1px solid black; */
+    /* height: 100vh; */
+    /* overflow-y: hidden; */
+    margin-top: 2px;
+}
+.side_bar{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    /* overflow-y: hidden; */
+    width: 10%;
+    background-color: rgb(8, 8, 51);
+    color: #808998;
+    /* border: 1px solid black; */
+}
+.side_bar>i{margin-top: 40px;}
+
+.grid_part{
+    /* border: 2px solid rgb(8, 8, 51); */
+    padding: 1.5% 2%;
+    width: 100%;
+    min-height: 100%;
+    background-color: lightgrey;
+    overflow: scroll;
+}
+.mini_header span{ 
+    margin: 3% 5%;
+    color: rgb(8, 8, 51);
+    font-weight:500;
+    border-bottom: 2px solid rgb(8, 8, 51);
+} 
+.grid_container{
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1.5%;
+    /* border: 1px solid black; */
+}
+.card{
+    width: auto;
+    height: 320px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    /* grid-template-rows: 320px; */
+}
+.image{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: all 1.1s;
+}
+
+.card:hover .image{
+    /* inside the card, when you hover, the image div should zoom */
+transform: scale(1.5,1.5);
+}
+.span_text{
+    font-family: cursive;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 17%;
+    left: 25%;
+}
+#second{
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: grey;
+    position: relative;
+    bottom: 28%;
+    left: 8%;
+}
+.bg-1{
+    background-image: url(./images/bracelet2.webp);
+}
+.bg-2{
+    background-image: url(./images/knitting.jpg);
+}
+.bg-3{
+    background-image: url(./images/sky.jpg);
+}
+.bg-3{
+    background-image:url(./images/bballf2.png);
+}
+.bg-4{
+    background-image: url(./images/bballf.jpg);
+}
+.bg-5{
+    background-image: url(./images/bball.jpg);
+}
+.bg-6{
+    background-image: url(./images/bracelets.jpg);
+}
+.bg-7{
+    background-image: url(./images/nice\ player.png);
+}
+.bg-8{
+    background-image: url(./images/sky.jpg);
+}
+.bg-9{
+    background-image: url(./images/writer.avif);
+}
+.bg-10{
+    background-image: url(./images/writer.jpg);
+}
+.bg-11{
+    background-image: url(./images/wallpaper.webp);
+}
+.bg-12{
+    background-image: url(./images/zik.jpg);
+}
+.bg-13{
+    background-image: url(./images/nails.jpg);
+}
+
+/* #media{border-bottom: 2px solid navy;
+padding-bottom:10px;}
+
+.grid-container{
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    margin: 3rem, 0px;
+    position: relative;
+    row-gap: -30px;
+}
+span{position: absolute;
+display: block;
+margin: auto;
+max-width: 100%;
+min-width: 100%;
+min-height: 100%;
+max-height: 100%;
+object-fit: cover;
+transition: all 0.5s ease-in-out 0s;cursor: pointer;}
+span:hover{transform: scale(1,2);}
+ img {
+border-radius: 20px;
+overflow-clip-margin: content-box;
+overflow: clip;
+ }
+    width: 200px;
+    height: 250px;
+    transition: width 1s, height 1s;
+    object-fit: cover;
+
+img:hover{width: 300px;
+height: 350px;}
+.image_2{width: 100px;}
+
+
+.box{
+    grid-row-start: 1;
+    grid-row-end: 15;}
+
+.text{display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+    color: white;
+}  */
