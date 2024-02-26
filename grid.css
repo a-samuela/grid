@@ -19,10 +19,15 @@ header{
 h1 {
         color:rgb(8, 8, 51);
         font-family:cursive;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        font-size: 2.5rem;
         /* border: 1px solid black; */
     }
-   
+h1 i.fa-lightbulb{
+        color: #f7c309;
+        padding-right: 10px;
+        font-size: 1.3em
+}
  .top_text{
         position: relative;
         right: -5%;
@@ -66,20 +71,15 @@ h1 {
     /* main */
 main{
     display: flex;
-    /* border: 1px solid black; */
-    /* height: 100vh; */
-    /* overflow-y: hidden; */
     margin-top: 2px;
 }
 .side_bar{
     display: flex;
     flex-direction: column;
     align-items:  center;
-    /* overflow-y: hidden; */
     width: 10%;
     background-color: rgb(8, 8, 51);
     color: #808998;
-    /* border: 1px solid black; */
 }
 .side_bar>i{margin-top: 40px;}
 
@@ -185,15 +185,149 @@ transform: scale(1.5,1.5);
 .bg-13{
     background-image: url(./images/nails.jpg);
 }
+@media only screen and (min-width:375px){
+
+        header{
+            height: 40px;
+            margin-top: -3%;
+            /* border: 1px solid black; */
+        }
+        h1 {
+             font-size: 0.6rem;
+             margin: 0%;
+            }
+         h1 i.fa-lightbulb {
+            font-size: 1em
+              }
+        .top_text {
+                height: auto;
+                position: relative;
+                right: -2%;
+                 }
+        input[type="Search"] {
+                width: 40%;
+                height: auto;
+                margin: 0%;
+            }
+.top_text>span#one {
+                margin: 0% 1%;
+                font-size: 0.8em;
+}
+header a {
+            font-size: 0.8em;}
+ button {
+    padding: 5px 7px;
+    font-size: 10px;
+   margin-left: 3px;
+ }
+ .side_bar{
+    font-size: 0.6em;
+    padding: 1%;
+    width: 15%;}
+
+.mini_header{font-size: 0.8em;
+    margin: 1% 5%;}
+
+.grid_container {
+    row-gap: 0.3%;
+    /* border: 1px solid black; */
+}
+          
+}
 @media only screen and (min-width: 600px) {
-    .grid_container {
-         
-            grid-template-columns: auto auto;
-        }            
+header {
+        height: 40px;
+        margin-top: -3%;
+        /* border: 1px solid black; */
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin: 0%;
+    }
+
+h1 i.fa-lightbulb {
+        font-size: 1.2em
+    }
+   
+    .top_text {
+        height: auto;
+        position: relative;
+        right: -5%;
+    }
+
+    input[type="Search"] {
+        width: 45%;
+        height: 20px;
+    }
+
+   .top_text>span#one {
+        margin: 0% 2%;
+        font-size: 1em;
+    }
+  
+    header a {
+        font-size: 1em;
+    }
+
+  button {
+        padding: 5px 7px;
+        font-size: 15px;
+    }
+   
+    .side_bar {
+        font-size: 0.8em;
+    }
+
+   .mini_header {
+        font-size: 1em;
+    }
+        .grid_container {
+            grid-template-columns: auto auto
+        }
+    
 }
 @media only screen and (min-width: 1024px) {
-    .grid_container {
-        grid-template-columns: auto auto auto;
+    header {
+            height: 40px;
+            margin-top: 0%;
+            /* border: 1px solid black; */
+        }
+    
+        h1 {
+            font-size: 2rem;
+            margin: 0%;
+        }
+    
+        input[type="Search"] {
+            width: 55%;
+            height: 30px;
+        }
+ .top_text>span#one {
+     margin: 0% 3%;
+     font-size: 1.2em;
+ }
+
+ header a {
+     font-size: 1.2em;
+ }
+ 
+        button {
+            padding: 7px 10px;
+            font-size: 1.2em;
+            margin-left: 2rem;
+        }
+    
+        .side_bar {
+            font-size: 1em;
+        }
+    
+        .mini_header {
+            font-size: .1.5em;
+        }
+    
+        .grid_container {
+            grid-template-columns: auto auto auto;
+        }
+    
     }
-}
-h1{ text-transform: ;}
